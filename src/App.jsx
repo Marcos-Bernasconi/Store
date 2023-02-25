@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "./Navbar";
-import { Card } from "./Card";
+
+import { ProductList } from "./ProductList";
 import "./App.css";
 
 function App() {
@@ -8,8 +9,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Card />
+      <div className="overflow-x-hidden">
+        <Navbar />
+        <ProductList />
+      </div>
     </>
   );
 }
