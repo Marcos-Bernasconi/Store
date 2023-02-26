@@ -2,7 +2,7 @@ export function InfoList() {
   return (
     <>
       <div className="px-8 snap-proximity snap-x flex overflow-auto space-x-4">
-        <div className="flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
           <div className="pl-7 pt-4">
             <svg
               className="h-16 w-16"
@@ -26,7 +26,7 @@ export function InfoList() {
           </p>
         </div>
 
-        <div className="flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
           <div className="pl-7 pt-4">
             <svg
               className="h-16 w-16"
@@ -64,7 +64,7 @@ export function InfoList() {
           </p>
         </div>
 
-        <div className="flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
           <div className="pl-7 pt-4">
             <svg
               className="h-16 w-16"
@@ -90,7 +90,7 @@ export function InfoList() {
           </p>
         </div>
 
-        <div className="flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
           <div className="pl-7 pt-4">
             <svg
               className="h-14 w-14"
@@ -114,7 +114,7 @@ export function InfoList() {
           </p>
         </div>
 
-        <div className="flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
           <div className="pl-7 pt-4">
             <svg
               className="text-orange-400"

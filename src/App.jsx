@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Navbar } from "./Navbar";
 import { InfoList } from "./InfoList";
 import { ProductList } from "./ProductList";
+import { ServiceList } from "./ServiceList";
+import { SpecialStore } from "./SpecialStore";
 import "./App.css";
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
           </span>
         </h1>
         <ProductList />
-        <h2 className="pl-8  text-2xl font-semibold w-80 mt-12 ">
+        <h2 className="pl-8  text-2xl font-bold w-80 mt-16 ">
           The latest.{" "}
           <span className="text-neutral-500 ">
             Take a look at what’s new, right now.
@@ -27,6 +29,22 @@ function App() {
         </h2>
       </div>
       <InfoList />
+
+      <h2 className="pl-8  text-2xl font-bold w-80 mt-12">
+        The Apple experience.{" "}
+        <span className="text-neutral-500">
+          Do even more with Apple products and services.
+        </span>
+      </h2>
+      <ServiceList />
+
+      <h2 className="pl-8  text-2xl font-bold w-80 mt-20">
+        Special stores.{" "}
+        <span className="text-neutral-500">
+          Exclusive savings for businesses, school, and more.{" "}
+        </span>
+      </h2>
+      <SpecialStore />
     </>
   );
 }
