@@ -1,7 +1,7 @@
 export function InfoList() {
   return (
     <>
-      <div className="pl-8 snap-proximity snap-x flex overflow-auto space-x-4">
+      <div className="px-8 snap-proximity snap-x flex overflow-auto space-x-4">
         <div className="flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
           <div className="pl-7 pt-4">
             <svg
@@ -20,8 +20,9 @@ export function InfoList() {
             </svg>
           </div>
           <p className="flex-none px-7 text-xl font-bold pb-4">
-            Enjoy two-hour delivery from an Apple Store, free delivery, or easy
-            pickup.²
+            Enjoy <span className="text-lime-500">two-hour delivery</span> from
+            an Apple Store, <span className="text-lime-500">free delivery</span>
+            , or <span className="text-lime-500">easy pickup.²</span>
           </p>
         </div>
 
@@ -56,7 +57,10 @@ export function InfoList() {
             </svg>
           </div>
           <p className=" px-7 text-xl font-bold pb-4">
-            Trade in your current device. Get credit toward a new one.3
+            <span className="text-violet-500">
+              Trade in your current device.
+            </span>{" "}
+            Get credit toward a new one.3
           </p>
         </div>
 
@@ -81,7 +85,8 @@ export function InfoList() {
             </svg>
           </div>
           <p className=" px-7 text-xl font-bold pb-4">
-            Pay in full or pay over time. Your choice.
+            Pay in full or <span className="text-lime-500">pay over time.</span>{" "}
+            Your choice.
           </p>
         </div>
 
@@ -103,8 +108,9 @@ export function InfoList() {
             </svg>
           </div>
           <p className=" px-7 text-xl font-bold pb-4">
-            Make them yours. Engrave a mix of emoji, names, and numbers for
-            free.
+            Make them yours.{" "}
+            <span className="text-blue-500"> Engrave a mix of emoji,</span>{" "}
+            names, and numbers for free.
           </p>
         </div>
 
@@ -128,7 +134,9 @@ export function InfoList() {
             </svg>
           </div>
           <p className="pt-2 px-7 text-xl font-bold pb-4">
-            Customize your Mac and create your own style of Apple Watch.
+            <span className="text-orange-500">Customize your Mac </span>and
+            create your own style of{" "}
+            <span className="text-orange-500">Apple Watch.</span>
           </p>
         </div>
       </div>
