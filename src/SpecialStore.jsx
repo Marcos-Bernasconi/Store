@@ -3,7 +3,7 @@ import { Card } from "./Card";
 export function SpecialStore() {
   return (
     <>
-      <div className="mt-8 flex h-[30rem] w-full snap-x snap-proximity space-x-8  overflow-auto px-8  md:h-[37rem]">
+      <div className="mt-8 flex h-[30rem] w-full snap-x snap-proximity space-x-8  overflow-auto px-8  md:h-[33rem]">
         <Card
           name="New colors"
           title="In with the new."
