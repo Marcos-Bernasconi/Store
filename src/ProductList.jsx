@@ -3,7 +3,7 @@ import { Card } from "./Card";
 export function ProductList() {
   return (
     <>
-      <div className="space-x-8 snap-proximity snap-x flex w-full  px-8 h-[30rem]  overflow-auto">
+      <div className="flex h-[30rem] w-full snap-x snap-proximity space-x-8  overflow-auto px-8 md:h-[37rem] ">
         <Card
           name="Iphone 14 pro"
           title="Pro. Beyond."

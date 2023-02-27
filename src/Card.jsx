@@ -1,20 +1,22 @@
 export function Card({ name, title, description, image, light }) {
   return light ? (
-    <div className="snap-center relative w-11/12 flex-none  rounded-2xl shadow-xl bg-secondary mx-auto h-auto overflow-hidden ">
-      <div className="p-8 absolute z-10">
-        <p className="uppercase text-sm text-neutral-500">{name}</p>
-        <p className="font-semibold text-2xl mt-4">{title}</p>
-        <p className="mt-2 whitespace-pre-wrap">{description}</p>
+    <div className="relative mx-auto h-auto w-11/12 flex-none  snap-center overflow-hidden rounded-2xl bg-secondary shadow-xl md:w-3/5 lg:max-w-md">
+      <div className="absolute z-10 p-8">
+        <p className="text-sm uppercase text-neutral-500">{name}</p>
+        <p className="mt-4 text-2xl font-semibold md:text-3xl">{title}</p>
+        <p className="mt-2 whitespace-pre-wrap md:w-80">{description}</p>
       </div>
 
       <img className=" absolute bottom-0 z-0" src={image} alt="Apple" />
     </div>
   ) : (
-    <div className="snap-center relative w-11/12 flex-none  rounded-2xl shadow-xl bg-black mx-auto h-auto overflow-hidden ">
-      <div className="p-8 absolute z-10">
-        <p className="uppercase text-sm text-base-100">{name}</p>
-        <p className="font-semibold text-2xl mt-4 text-secondary ">{title}</p>
-        <p className="mt-2 text-secondary whitespace-pre-wrap ">
+    <div className="relative mx-auto h-auto w-11/12 flex-none  snap-center overflow-hidden rounded-2xl bg-black shadow-xl md:w-3/5  lg:max-w-md">
+      <div className="absolute z-10 p-8">
+        <p className="text-sm uppercase text-base-100 ">{name}</p>
+        <p className="mt-4 text-2xl font-semibold text-secondary md:text-3xl">
+          {title}
+        </p>
+        <p className="mt-2 whitespace-pre-wrap text-secondary ">
           {description}
         </p>
       </div>
