@@ -1,8 +1,8 @@
 export function InfoList() {
   return (
     <>
-      <div className="px-8  snap-proximity snap-x flex overflow-auto space-x-4">
-        <div className="md:w-1/2 snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+      <div className="flex  snap-x snap-proximity space-x-4 overflow-auto px-8 ">
+        <div className="my-8 h-56 w-11/12 max-w-sm flex-none snap-center rounded-2xl bg-secondary shadow-xl md:w-1/2 lg:ml-[20%]">
           <div className="pl-7 pt-4">
             <svg
               className="h-16 w-16"
@@ -19,14 +19,14 @@ export function InfoList() {
               ></path>
             </svg>
           </div>
-          <p className="flex-none px-7 text-xl font-bold pb-4">
+          <p className="flex-none px-7 pb-4 text-xl font-bold">
             Enjoy <span className="text-lime-500">two-hour delivery</span> from
             an Apple Store, <span className="text-lime-500">free delivery</span>
             , or <span className="text-lime-500">easy pickup.²</span>
           </p>
         </div>
 
-        <div className="md:w-1/2 snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className=" my-8 h-56 w-11/12 max-w-sm flex-none snap-center rounded-2xl bg-secondary shadow-xl md:w-1/2">
           <div className="pl-7 pt-4">
             <svg
               className="h-16 w-16"
@@ -56,7 +56,7 @@ export function InfoList() {
               ></path>
             </svg>
           </div>
-          <p className=" px-7 text-xl font-bold pb-4">
+          <p className=" px-7 pb-4 text-xl font-bold">
             <span className="text-violet-500">
               Trade in your current device.
             </span>{" "}
@@ -64,7 +64,7 @@ export function InfoList() {
           </p>
         </div>
 
-        <div className="md:w-1/2 snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="my-8 h-56  w-11/12 max-w-sm flex-none snap-center rounded-2xl bg-secondary shadow-xl md:w-1/2">
           <div className="pl-7 pt-4">
             <svg
               className="h-16 w-16"
@@ -84,13 +84,13 @@ export function InfoList() {
               </g>
             </svg>
           </div>
-          <p className=" px-7 text-xl font-bold pb-4">
+          <p className=" px-7 pb-4 text-xl font-bold">
             Pay in full or <span className="text-lime-500">pay over time.</span>{" "}
             Your choice.
           </p>
         </div>
 
-        <div className="md:w-1/2 snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="my-8 h-56 w-11/12  max-w-sm flex-none snap-center rounded-2xl bg-secondary shadow-xl md:w-1/2">
           <div className="pl-7 pt-4">
             <svg
               className="h-14 w-14"
@@ -107,14 +107,14 @@ export function InfoList() {
               ></path>
             </svg>
           </div>
-          <p className=" px-7 text-xl font-bold pb-4">
+          <p className=" px-7 pb-4 text-xl font-bold">
             Make them yours.{" "}
             <span className="text-blue-500"> Engrave a mix of emoji,</span>{" "}
             names, and numbers for free.
           </p>
         </div>
 
-        <div className="md:w-1/2 snap-center flex-none rounded-2xl bg-secondary shadow-xl w-11/12 h-56 my-8">
+        <div className="my-8 h-56 w-11/12  max-w-sm flex-none snap-center rounded-2xl bg-secondary shadow-xl md:w-1/2">
           <div className="pl-7 pt-4">
             <svg
               className="text-orange-400"
@@ -133,7 +133,7 @@ export function InfoList() {
               />
             </svg>
           </div>
-          <p className="pt-2 px-7 text-xl font-bold pb-4">
+          <p className="px-7 pt-2 pb-4 text-xl font-bold">
             <span className="text-orange-500">Customize your Mac </span>and
             create your own style of{" "}
             <span className="text-orange-500">Apple Watch.</span>

@@ -20,31 +20,34 @@ function App() {
             The best way to buy the products you love.
           </span>
         </h1>
+
         <ProductList />
+
         <h2 className="mt-16 w-80 pl-8 text-2xl font-bold md:mt-20 md:w-1/2   ">
           The latest.{" "}
           <span className="text-neutral-500 ">
             Take a look at what’s new, right now.
           </span>
         </h2>
+
+        <InfoList />
+
+        <h2 className="mt-12 w-80 pl-8  text-2xl font-bold md:mt-20 md:w-3/4 md:text-3xl md:leading-relaxed">
+          The Apple experience.{" "}
+          <span className="text-neutral-500">
+            Do even more with Apple products and services.
+          </span>
+        </h2>
+        <ServiceList />
+
+        <h2 className="mt-20 w-80 pl-8  text-2xl font-bold md:mt-24 md:w-3/4 md:text-3xl md:leading-relaxed">
+          Special stores.{" "}
+          <span className="text-neutral-500">
+            Exclusive savings for businesses, school, and more.{" "}
+          </span>
+        </h2>
+        <SpecialStore />
       </div>
-      <InfoList />
-
-      <h2 className="mt-12 w-80 pl-8  text-2xl font-bold md:mt-20 md:w-3/4 md:text-3xl md:leading-relaxed">
-        The Apple experience.{" "}
-        <span className="text-neutral-500">
-          Do even more with Apple products and services.
-        </span>
-      </h2>
-      <ServiceList />
-
-      <h2 className="mt-20 w-80 pl-8  text-2xl font-bold md:mt-24 md:w-3/4 md:text-3xl md:leading-relaxed">
-        Special stores.{" "}
-        <span className="text-neutral-500">
-          Exclusive savings for businesses, school, and more.{" "}
-        </span>
-      </h2>
-      <SpecialStore />
     </>
   );
 }
