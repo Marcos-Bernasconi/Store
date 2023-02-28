@@ -1,11 +1,11 @@
 export function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <a className="  normal-case text-xl">
+      <div className="navbar bg-base-100 md:px-8 lg:mx-auto lg:w-2/3">
+        <div className="navbar-start">
+          <a className="  text-xl normal-case">
             <svg
-              className="w-16 h-16"
+              className="h-16 w-16"
               height="44"
               viewBox="0 0 14 44"
               width="14"
@@ -15,11 +15,25 @@ export function Navbar() {
             </svg>
           </a>
         </div>
-        <div className="flex-none">
-          <div className="dropdown dropdown-end pr-4">
+
+        <div className="navbar-center hidden  2xl:block">
+          <ul className="child flex  2xl:space-x-14 [&>li]:text-sm">
+            <li>Store</li>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>Watch</li>
+            <li>AirPods</li>
+            <li>Accessories</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div className="navbar-end">
+          <div className="dropdown-end dropdown pr-4">
             <label
               tabIndex={0}
-              className="btn btn-ghost btn-circle focus:bg-transparent"
+              className="btn-ghost btn-circle btn focus:bg-transparent"
             >
               <div className="indicator ">
                 <svg
@@ -43,28 +57,28 @@ export function Navbar() {
             </label>
             <div
               tabIndex={0}
-              className="mt-3 card card-compact dropdown-content w-52 bg-secondary shadow"
+              className="card dropdown-content card-compact mt-3 w-52 bg-secondary shadow"
             >
               <div className="card-body">
-                <span className="font-bold text-lg">8 Items</span>
+                <span className="text-lg font-bold">8 Items</span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
+                  <button className="btn-primary btn-block btn">
                     View cart
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+          <div className="dropdown-end dropdown">
+            <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
               <div className="w-10 rounded-full">
                 <img src="https://th.bing.com/th/id/OIP.6yuCxX3agcmqdUaie4OZwQAAAA?w=175&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" />
               </div>
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-secondary rounded-box w-52"
+              className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-secondary p-2 shadow"
             >
               <li>
                 <a className="justify-between">
