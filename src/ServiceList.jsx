@@ -3,7 +3,7 @@ import { Card } from "./Card";
 export function ServiceList() {
   return (
     <>
-      <div className="mt-8 flex h-[30rem] w-full snap-x snap-proximity space-x-8  overflow-auto px-8  md:h-[33rem]">
+      <div className="scrollbar mt-8 flex h-[30rem] w-full snap-x snap-proximity space-x-8 overflow-auto  px-8 md:h-[35rem]  lg:pb-8">
         <Card
           name="Special offers"
           title="Six Apple services. One easy subscription. "

@@ -1,7 +1,7 @@
 export function InfoList() {
   return (
     <>
-      <div className="flex  snap-x snap-proximity space-x-4 overflow-auto px-8 ">
+      <div className="lg:scrollbar flex  snap-x snap-proximity space-x-4 overflow-auto px-8 ">
         <div className="my-8 h-56 w-11/12 max-w-sm flex-none snap-center rounded-2xl bg-secondary shadow-xl md:w-1/2 lg:ml-[20%]">
           <div className="pl-7 pt-4">
             <svg

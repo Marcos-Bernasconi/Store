@@ -7,3 +7,30 @@
     font-family: Nunito, system-ui, sans-serif;
   }
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+   
+    height: 20px;
+ 
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+  
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 100vh;
+   
+    border-left: solid #f3f4f6 400px;
+    border-top: solid #f3f4f6 5px;
+    border-bottom: solid #f3f4f6 5px;
+   
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #d1d5db;
+  }
+}

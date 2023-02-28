@@ -1,6 +1,6 @@
 export function Card({ name, title, description, image, light }) {
   return light ? (
-    <div className="relative mx-auto h-auto w-11/12 flex-none  snap-center overflow-hidden rounded-2xl bg-secondary shadow-xl md:w-7/12 lg:ml-[20%] lg:max-w-md">
+    <div className="relative mx-auto h-auto w-11/12 flex-none snap-center  overflow-hidden rounded-2xl bg-secondary shadow-xl md:w-7/12 lg:ml-[20%]  lg:max-w-md">
       <div className="absolute z-10 p-8">
         <p className="text-sm uppercase text-neutral-500">{name}</p>
         <p className="mt-4 text-2xl font-semibold md:text-3xl">{title}</p>
@@ -14,7 +14,7 @@ export function Card({ name, title, description, image, light }) {
       />
     </div>
   ) : (
-    <div className="relative mx-auto h-auto w-11/12 flex-none snap-center overflow-hidden rounded-2xl bg-black shadow-xl md:w-7/12 lg:ml-[20%]  lg:max-w-md ">
+    <div className="relative mx-auto h-auto w-11/12 flex-none snap-center overflow-hidden rounded-2xl bg-black shadow-xl md:w-7/12 lg:ml-[20%] lg:max-w-md   ">
       <div className="absolute z-10 p-8">
         <p className="text-sm uppercase text-base-100 ">{name}</p>
         <p className="mt-4 text-2xl font-semibold text-secondary md:text-3xl">
