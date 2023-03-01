@@ -12,6 +12,7 @@ import "./App.css";
 function App() {
   const [text, setText] = useState();
   const [searchResult, setSearchResult] = useState();
+  const [firstSearch, setFistSearch] = useState(false);
 
   useEffect(() => {
     addProducts();
@@ -26,6 +27,11 @@ function App() {
     const result = await searchProduct(text);
     setSearchResult(result);
     console.log(result);
+
+    if (firstSearch == false) {
+      setFistSearch(true);
+      console.log("Runned again");
+    }
   }
   return (
     <>
@@ -74,6 +80,7 @@ function App() {
       <div className="my-8 flex  lg:ml-[20%]">
         <input
           onChange={handleChange}
+          autoComplete="off_disabled"
           type="text"
           className="ml-8 p-2  text-lg outline-none md:w-80  "
           placeholder="Search products"
@@ -93,7 +100,7 @@ function App() {
           </svg>
         </button>
       </div>
-      <SearchResult />
+      <SearchResult data={searchResult} firstSearch={firstSearch} />
     </>
   );
 }
