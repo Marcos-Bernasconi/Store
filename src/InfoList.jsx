@@ -60,7 +60,7 @@ export function InfoList() {
             <span className="text-violet-500">
               Trade in your current device.
             </span>{" "}
-            Get credit toward a new one.3
+            Get credit toward a new one.
           </p>
         </div>
 

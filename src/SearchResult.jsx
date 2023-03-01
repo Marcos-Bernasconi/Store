@@ -47,6 +47,7 @@ export function SearchResult() {
         />
 
         <CardSearch
+          name="CAPABLE AND AFFORDABLE"
           description="From $249 or $10.58/mo."
           title="Apple Watch SE"
           image="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-se-202209_GEO_US_FMT_WHH?wid=508&hei=472&fmt=png-alpha&.v=1674585946405"

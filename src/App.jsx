@@ -16,7 +16,7 @@ function App() {
       <Navbar />
 
       <div className="overflow-x-hidden ">
-        <h1 className="my-8 max-w-[40rem] pl-8 text-3xl font-bold md:py-8 md:text-5xl md:font-semibold md:leading-tight lg:ml-[20%]">
+        <h1 className="my-8 w-80 max-w-[40rem] pl-8 text-3xl font-bold md:w-4/5 md:py-8 md:text-5xl md:font-semibold md:leading-tight lg:ml-[20%]">
           Store.{" "}
           <span className=" text-neutral-500">
             The best way to buy the products you love.

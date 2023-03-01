@@ -6,17 +6,19 @@ export function CardSearch({ name, image, title, description }) {
           <p className="min-h-[12px] text-xs uppercase text-neutral-500">
             {name}
           </p>
-          <p className="mt-1 text-2xl font-semibold md:text-3xl">{title}</p>
+          <p className="mt-1 w-10/12 text-2xl font-semibold md:w-9/12 md:text-3xl">
+            {title}
+          </p>
         </div>
 
         <img
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+          className="absolute top-1/2 left-1/2 w-8/12 -translate-x-1/2 -translate-y-1/2  "
           src={image}
           alt="Apple"
         />
-        <div className="absolute bottom-0 z-10 flex items-center space-x-4 p-8">
-          <p className="mt-2 text-base ">{description}</p>
-          <button className="inline-block  rounded-full bg-blue-600 py-2 px-6 text-base text-secondary">
+        <div className="absolute bottom-0 left-1/2 z-10 flex w-full -translate-x-1/2 items-center justify-start space-x-4 p-8  md:justify-around md:space-x-16">
+          <p className="mt-2 text-base md:text-lg">{description}</p>
+          <button className="inline-block  rounded-full bg-blue-600 py-2 px-6 text-base text-secondary md:text-lg">
             Buy
           </button>
         </div>
