@@ -5,7 +5,7 @@ export function Navbar() {
         <div className="navbar-start">
           <a className="  text-xl normal-case">
             <svg
-              className="h-16 w-16"
+              className="h-16 w-16 cursor-pointer"
               height="44"
               viewBox="0 0 14 44"
               width="14"
@@ -17,7 +17,7 @@ export function Navbar() {
         </div>
 
         <div className="navbar-center hidden  2xl:block">
-          <ul className="child flex  2xl:space-x-14 [&>li]:text-sm">
+          <ul className="child flex  2xl:space-x-14 [&>li]:cursor-pointer [&>li]:text-sm">
             <li>Store</li>
             <li>Mac</li>
             <li>iPad</li>
