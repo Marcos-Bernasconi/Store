@@ -1,16 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar } from "./Navbar";
 import { InfoList } from "./InfoList";
 import { ProductList } from "./ProductList";
 import { ServiceList } from "./ServiceList";
 import { SpecialStore } from "./SpecialStore";
 import { SearchResult } from "./SearchResult";
+import { addProducts, searchProduct } from "./data";
 
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [text, setText] = useState();
+  const [searchResult, setSearchResult] = useState();
 
+  useEffect(() => {
+    addProducts();
+  }, []);
+
+  function handleChange(e) {
+    console.log(e.target.value);
+    setText(e.target.value);
+  }
+
+  async function handleClick() {
+    const result = await searchProduct(text);
+    setSearchResult(result);
+    console.log(result);
+  }
   return (
     <>
       <Navbar />
@@ -57,11 +73,12 @@ function App() {
       </h2>
       <div className="my-8 flex  lg:ml-[20%]">
         <input
+          onChange={handleChange}
           type="text"
           className="ml-8 p-2  text-lg outline-none md:w-80  "
           placeholder="Search products"
         />
-        <button className=" bg-gray-400 px-2">
+        <button onClick={handleClick} className=" bg-gray-400 px-2">
           <svg
             className="h-8 w-8 text-secondary"
             xmlns="http://www.w3.org/2000/svg"
