@@ -4,6 +4,7 @@ import { InfoList } from "./InfoList";
 import { ProductList } from "./ProductList";
 import { ServiceList } from "./ServiceList";
 import { SpecialStore } from "./SpecialStore";
+import { SearchResult } from "./SearchResult";
 
 import "./App.css";
 
@@ -49,6 +50,17 @@ function App() {
         </h2>
         <SpecialStore />
       </div>
+
+      <h2 className=" mt-20 w-80 pl-8 text-2xl  font-bold md:mt-24 md:w-3/4 md:text-3xl md:leading-relaxed lg:ml-[20%]">
+        Find what you want.{" "}
+        <span className="text-neutral-500">Every need satisfied </span>
+      </h2>
+      <input
+        type="text"
+        className="my-8 ml-8 p-2 text-lg outline-none focus:outline-2 focus:outline-gray-300 "
+        placeholder="Search products"
+      />
+      <SearchResult />
     </>
   );
 }
