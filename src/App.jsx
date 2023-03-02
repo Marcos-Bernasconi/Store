@@ -108,7 +108,9 @@ function App() {
           </svg>
         </button>
       </div>
-      <SearchResult data={searchResult} firstSearch={firstSearch} />
+      <div className="min-h-[35rem]  md:min-h-[40rem]">
+        <SearchResult data={searchResult} firstSearch={firstSearch} />
+      </div>
     </>
   );
 }
