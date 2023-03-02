@@ -86,6 +86,8 @@ function App() {
       </h2>
       <div className="my-8 flex  lg:ml-[20%]">
         <input
+          list="products-choice"
+          spellCheck="false"
           onKeyDown={handleKey}
           onChange={handleChange}
           autoComplete="off_disabled"
@@ -93,6 +95,15 @@ function App() {
           className="ml-8 p-2  text-lg outline-none md:w-80  "
           placeholder="Search products"
         />
+
+        <datalist id="products-choice">
+          <option value="iPhone" />
+          <option value="iPad" />
+          <option value="Mac" />
+          <option value="AirPods" />
+          <option value="Watch" />
+        </datalist>
+
         <button onClick={handleClick} className=" bg-gray-400 px-2">
           <svg
             className="h-8 w-8 text-secondary"
