@@ -102,6 +102,7 @@ function App() {
           <option value="Mac" />
           <option value="AirPods" />
           <option value="Watch" />
+          <option value="Magic" />
         </datalist>
 
         <button onClick={handleClick} className=" bg-gray-400 px-2">
