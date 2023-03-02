@@ -1,7 +1,7 @@
 export function CardSearch({ name, image, title, description }) {
   return (
     <>
-      <div className="relative mx-auto h-auto w-11/12 flex-none snap-center  overflow-hidden rounded-2xl bg-secondary shadow-xl md:w-7/12 lg:ml-[20%]  lg:max-w-md">
+      <div className="relative  h-auto w-11/12 flex-none snap-center  overflow-hidden rounded-2xl bg-secondary shadow-xl md:w-7/12 lg:ml-[20%]  lg:max-w-md">
         <div className="relative z-10 px-8 pt-6">
           <p className="min-h-[12px] text-xs uppercase text-neutral-500">
             {name}

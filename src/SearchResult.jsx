@@ -62,7 +62,7 @@ export function SearchResult({ data, firstSearch }) {
     <>
       <div className="scrollbar mt-8 flex h-[30rem] w-full snap-x snap-proximity space-x-8 overflow-auto  px-8 md:h-[35rem]  lg:pb-8">
         {data.hits.map((product) => {
-          console.log(product.document.title + "WTF");
+          console.log(product.id + ": id");
           return (
             <CardSearch
               key={product.id}

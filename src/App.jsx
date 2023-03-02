@@ -19,8 +19,15 @@ function App() {
   }, []);
 
   function handleChange(e) {
-    console.log(e.target.value);
+    //console.log(e.target.value);
     setText(e.target.value);
+  }
+
+  function handleKey(e) {
+    //console.log(e);
+    if (e.key == "Enter") {
+      handleClick();
+    }
   }
 
   async function handleClick() {
@@ -79,6 +86,7 @@ function App() {
       </h2>
       <div className="my-8 flex  lg:ml-[20%]">
         <input
+          onKeyDown={handleKey}
           onChange={handleChange}
           autoComplete="off_disabled"
           type="text"
