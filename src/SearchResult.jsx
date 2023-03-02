@@ -1,6 +1,9 @@
-import { CardSearch } from "./CardSearch";
+import { motion, AnimatePresence } from "framer-motion";
+import { CardSearch, MotionCardSearch } from "./CardSearch";
+import { useRef } from "react";
 
 export function SearchResult({ data, firstSearch }) {
+  const ref = useRef(null);
   if (firstSearch == false) {
     return (
       <>
@@ -61,18 +64,25 @@ export function SearchResult({ data, firstSearch }) {
   return (
     <>
       <div className="scrollbar mt-8 flex h-[30rem] w-full snap-x snap-proximity space-x-8 overflow-auto  px-8 md:h-[35rem]  lg:pb-8">
-        {data.hits.map((product) => {
-          console.log(product.id + ": id");
-          return (
-            <CardSearch
-              key={product.id}
-              name={product.document.name}
-              description={product.document.description}
-              title={product.document.title}
-              image={product.document.image}
-            />
-          );
-        })}
+        <AnimatePresence>
+          {" "}
+          {data.hits.map((product) => {
+            console.log(product.id + ": id");
+            return (
+              <MotionCardSearch
+                ref={ref}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                key={product.id}
+                name={product.document.name}
+                description={product.document.description}
+                title={product.document.title}
+                image={product.document.image}
+              />
+            );
+          })}
+        </AnimatePresence>
       </div>
     </>
   );
