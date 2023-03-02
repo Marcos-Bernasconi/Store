@@ -64,16 +64,17 @@ export function SearchResult({ data, firstSearch }) {
   return (
     <>
       <div className="scrollbar mt-8 flex h-[30rem] w-full snap-x snap-proximity space-x-8 overflow-auto  px-8 md:h-[35rem]  lg:pb-8">
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {" "}
           {data.hits.map((product) => {
             console.log(product.id + ": id");
             return (
               <MotionCardSearch
                 ref={ref}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                layout={"position"}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
                 key={product.id}
                 name={product.document.name}
                 description={product.document.description}
