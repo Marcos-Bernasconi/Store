@@ -1,13 +1,16 @@
 import { create, insertBatch, search } from "@lyrasearch/lyra";
 
-(async () => {
-  const productDB = await create({
+async function createDB() {
+  productDB = await create({
     schema: {
       title: "string",
       short: "string",
     },
   });
-})();
+  return productDB;
+}
+
+let productDB = createDB();
 
 const data = [
   {
