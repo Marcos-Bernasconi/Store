@@ -1,7 +1,7 @@
 {
-  "homepage": "https://marcos-bernasconi.github.io/store/",
   "name": "commerce",
-  "private": true,
+  "homepage": "https://marcos-bernasconi.github.io/store/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
